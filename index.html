@@ -1,80 +1,83 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio de Julian</title>
-  <link rel="icon" type="image/png" href="images/icone.png">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
 </head>
+
 <body>
-  <header>
-    <div class="header-title">
-      <h1>Julian Pasteur</h1>
-      <h2>Étudiant en développement et programmation</h2>
-    </div>
+    <nav class="navbar">
+        <li><a href="projets_acad.html">Projets académiques</a></li>
+        <li><a href="projets_pro.html">Projet professionel</a></li>
+        <li><a href="CV.html">CV</a></li>
+    </nav>
+    <h1 class="NomTitre">Julian Pasteur</h1>
 
-    <div class="about-container">
-      <img src="images/photo.jpg" alt="Photo de Julian" class="profile-pic">
-      <div class="about-text">
-        <p>Bonjour ! Je m'appelle Julian Pasteur et je suis étudiant en BUT Informatique. Passionné par le développement web et logiciel, je me forme actuellement aux langages comme Python, Java, SQL, C, JavaScript ou encore HTML/CSS.</p>
-        <p>Mon objectif est de devenir développeur full-stack. J'aime relever des défis techniques et travailler sur des projets concrets qui ont un impact réel, me permettant de sentir une vraie amélioration de mes compétences.</p>
-        <p>En dehors du code, je m'intéresse aussi aux jeux vidéo, aux mathématiques ou encore au sport en général.</p>
-      </div>
-    </div>
+    <h2>À Propos de moi</h2>
+    <section id="profil">
+        <img style="width: 300px; border-radius: 40%;" src="images/photo.png" alt="">
+        <p>
 
-    <div class="bottom-nav">
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
+            Bonjour ! Je m'appelle Julian Pasteur et je suis étudiant en BUT Informatique. Passionné par le
+            développement web et logiciel, je me forme actuellement aux langages comme Python, Java, SQL, C, JavaScript
+            ou encore HTML/CSS.
 
-  <section id="projects">
-    <h2>Projets scolaires :</h2>
-    <div class="project"> 
-      <h3>Vocoder</h3>
-      <p>Une application développée en Java offrant la possibilité d'entrer un son et que :</p>
-      <p>   &nbsp; &bull; &nbsp; La durée soit modifiée sans impacter la fréquence</p>
-      <p>   &nbsp; &bull; &nbsp; La fréquence soit changée sans que la durée ne soit impactée</p>
-      <p>   &nbsp; &bull; &nbsp; On y ajoute un écho</p>
-      <button><a style="text-decoration: none; color: white;" href="Vocoder.html">Détails</a></button>
-    </div>
-    <div class="project">
-      <h3>Jeu puissance X</h3>
-      <p>Jeu vidéo développé en Java</p>
-      <p>   &nbsp; &bull; &nbsp; En programmation orientée objet (POO) et suivant le paradigme MVC</p>
-      <p>   &nbsp; &bull; &nbsp; Puissance 4 avec taille de la grille adaptable</p>
-      <p>   &nbsp; &bull; &nbsp; Implémentation de plusieurs intelligences artificielles</p>
-      <p>   &nbsp; &bull; &nbsp; Testé avec JUnit</p>
-      <p>   &nbsp; &bull; &nbsp; Implémentation d'un mode graphique avec JavaFX</p>
-      <button><a style="text-decoration: none; color: white;" href="puissanceX.html">Détails</a></button>
-    </div>
-  </section>
-  
-  <section id="projects">
-    <h2>Projets personnels :</h2>
-    <div class="project">
-      <h3>Mod Minecraft</h3>
-      <p>Développement d'un mode minecraft en Java à partir du modèle forge et de son framework</p>
-      <p>   &nbsp; &bull; &nbsp; Mode de jeu ajoutant de nouveaux items et blocs</p>
-      <p>   &nbsp; &bull; &nbsp; Encore en cours</p>
-    </div>
-  </section>
-  
-  <section id="contact">
+            Mon objectif est de devenir développeur full-stack. J'aime relever des défis techniques et travailler sur
+            des projets concrets qui ont un impact réel, me permettant de sentir une vraie amélioration de mes
+            compétences.
+
+            En dehors du code, je m'intéresse aussi aux jeux vidéo, aux mathématiques ou encore au sport en général.
+
+        </p>
+    </section>
+
     <h2>Me Contacter</h2>
-    <p>Je suis ouvert à toute opportunité de stage ou projet collaboratif. N'hésitez pas à me contacter :</p>
-    <div class="contact-info">
-      <a href="https://github.com/Jpstr1" style="text-decoration: none;"> 📚 GitHub : Jpstr1</a><br><br>
-      <a href="tel:0767470262" style="text-decoration: none;"> 📞 Téléphone : 07 67 47 02 62</a><br><br>
-      <a href="mailto:julianpasteurrr@gmail.com" style="text-decoration: none;"> 📧 Email : julianpasteurrr@gmail.com</a><br><br>
-      <a href="https://www.instagram.com/julian_pstr" target="_blank" style="text-decoration: none;"> 📸 Instagram : @julian_pstr</a>    
+    <div style="display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    width: 70%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 50px;
+    margin: 100px auto 0 auto;">
+
+        <p style="margin: 0 0 20px 0; font-size: 30px;">
+            Je suis ouvert à toute opportunité de stage ou projet collaboratif. N'hésitez pas à me contacter :
+        </p>
+
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 25px;">
+            <li>
+                <a href="tel:0767470262" style="text-decoration: none; color: white;">
+                    📞 Téléphone : 07 67 47 02 62
+                </a>
+            </li><br>
+            <li>
+                <a href="mailto:julianpasteurrr@gmail.com" style="text-decoration: none; color: white;">
+                    📧 Email : julianpasteurrr@gmail.com
+                </a>
+            </li><br>
+            <li>
+                📍 Première adresse postale : 2 le clos des Hauts Prés, 25720 Pugey
+            </li><br>
+            <li>
+                📍 Deuxième adresse postale : 11 rue Aristide Briand, 90000 Belfort
+            </li>
+
+        </ul>
     </div>
-  </section>
 
-  <footer>
-    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">© 2025 Julian Pasteur</p>
-  </footer>
 
+    <footer>
+        <p>© 2025 Julian Pasteur</p>
+    </footer>
 </body>
+
+
 </html>
