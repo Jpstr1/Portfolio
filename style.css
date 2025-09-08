@@ -26,7 +26,7 @@ button {
     border-radius: 10px;
 }
 
-button :hover{
+button :hover {
     margin-top: 20px;
     width: 150px;
     height: 50px;
@@ -41,11 +41,10 @@ section {
     justify-content: center;
     align-items: center;
     gap: 45px;
-    
+
     padding-left: 40px;
     padding-right: 40px;
     width: 70%;
-    height: 600px;
     background-color: rgba(0, 0, 0, 0.397);
     border-radius: 50px;
     margin: 100px auto 0 auto;
@@ -64,46 +63,80 @@ h2 {
     font-size: 35px;
 }
 
+
+
 .navbar {
     width: 100%;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.712);
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.55);
     position: fixed;
     top: 0;
-
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    list-style: none;
-    
+    padding-right: 10%;
     z-index: 1000;
 }
 
-.navbar li {
+.navbar ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 2.5rem;
     list-style: none;
-    margin: auto;
-
-    width: 20%;
-    height: 55%;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 40);
+    margin-right: 3rem;
 }
 
-.navbar li :hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: auto;
-
+.navbar {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    border: white solid 1px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    z-index: 1000;
 }
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 250px;
+}
+
+
+
+.navbar li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.navbar li a:hover {
+    color: #ddd;
+}
+
+
 
 
 
@@ -130,7 +163,7 @@ footer {
     justify-content: center;
     align-items: center;
     list-style: none;
-    
+
     z-index: 1000;
 }
 
@@ -144,12 +177,6 @@ footer {
     margin: 10px auto;
     width: 55%;
     height: auto;
-}
-
-.cv-img:hover {
-    width: 60%;
-    box-shadow: 2000px;
-    transition: 0.3s;
 }
 
 .download {
@@ -167,4 +194,81 @@ footer {
 .download:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border: solid 1px white;
+}
+
+.skillset {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px;
+    width: 70%;
+    margin: 100px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.397);
+    border-radius: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid rgba(168, 85, 247, 0.6);
+    border-radius: 15px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    color: white;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    box-shadow: 3px 3px rgba(100, 0, 170, 0.2);
+}
+
+.card:hover {
+    border-color: rgb(192, 132, 252);
+    background-color: rgba(0, 0, 34, 0.497);
+}
+
+.tool-card {
+    width: 170px;
+    height: 170px;
+    perspective: 1000px;
+    margin: auto;
+}
+
+.tool-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tool-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(168, 85, 247, 0.6);
+    border-radius: 15px;
+    box-shadow: 3px 3px rgba(100, 0, 170, 0.2);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: white;
+    background: rgba(0, 0, 34, 0.7);
+}
+
+.card-front img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: rgba(0, 0, 34, 0.95);
 }

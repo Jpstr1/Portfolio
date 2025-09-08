@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,61 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Projets professionels</title>
 </head>
+
 <body>
-    <h1 class="NomTitre">Mes projets professionels</h1>
+    <h1 class="NomTitre">Mon premier projet<br>professionel</h1>
 
     <nav class="navbar">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projets_acad.html">Projets académiques</a></li>
-        <li><a href="CV.html">CV</a></li>
+        <a href="index.html#profil"><img src="images/logo_JP.png" style="float: left; width: 75px;" alt="JP"></a>
+            <ul>
+            <li><a href="index.html"><img style="width: 35px;" src="images/Accueil.png">Accueil</a></li>
+            <li><a href="projets_acad.html"><img style="width: 40px;" src="images/proj_acad.png">Projets académiques</a>
+            </li>
+            <li><a href="projets_pro.html"><img style="width: 40px;" src="images/proj_pro.png">Projet professionnel</a>
+            </li>
+            <li><a href="CV.html"><img style="width: 30px;" src="images/CV.png">Mon CV</a></li>
+        </ul>
     </nav>
+
+    <section style="height: 400px;">
+        <div style="width: 90%;">
+            <h3>Site informatif professionel - MATHière à penser</h3>
+            <br>
+            <p>Développement d'un site Front End (HTML / CSS / JavaScript) d'information en autonomie</p>
+            <br>
+            <p>Conception d'un script PHP utilisant sqlLite, automatisant l'envoi de devis / facture par des formulaires
+                préparés</p>
+            <br>
+            <p>Mise en place de différents scripts avec JavaScript</p>
+        </div>
+    </section>
+
+    <h2>Apparence du site</h2>
+    <section style="height: 500px;">
+        <img src="images/screen1_site.png" alt="Screen 3" width="250%" style="border-radius: 20px;">
+
+        <p>Cette capture d'écran illustre la page d'accueil du site principal, qui regroupe six « sous-sites », chacun
+            dédié à un domaine spécifique des mathématiques.</p>
+    </section>
+
+    <section style="height: 500px;">
+        <video src="images/video_site.mp4" style="width: 200%; border-radius: 20px;" controls></video>
+        <div>
+            <p>Cette vidéo démarre sur la page d'accueil du site Klasma. Elle présente le style visuel, identique sur
+                l’ensemble des pages du site.</p><br><br>
+
+            <p>Elle illustre également l’intégration de vidéos, protégées contre le téléchargement grâce à un script
+                JavaScript, conformément à la demande de l’employeur.</p><br><br>
+
+            <p>Enfin, elle montre le fonctionnement de l’envoi automatisé d’e-mails, réalisé avec PHP et SQLite.</p>
+
+        </div>
+    </section>
 
     <footer>
         <p>© 2025 Julian Pasteur</p>
     </footer>
 
 </body>
+
 </html>
