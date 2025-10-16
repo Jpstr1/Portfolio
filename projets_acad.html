@@ -1,117 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Projets académiques</title>
+    <title>Projets académiques - Julian Pasteur</title>
+    <meta name="description" content="Découvrez les projets académiques de Julian Pasteur, étudiant en BUT Informatique">
 </head>
 
 <body>
-    <h1 class="NomTitre">Mes projets académiques<br>majeurs</h1>
+    <header>
+        <h1 class="NomTitre">Mes projets académiques<br>majeurs</h1>
+    </header>
 
-    <nav class="navbar">
-        <a href="index.html#profil"><img src="images/logo_JP.png" style="float: left; width: 75px;" alt="JP"></a>
-        <ul>
-            <li><a href="index.html"><img style="width: 35px;" src="images/Accueil.png">Accueil</a></li>
-            <li><a href="projets_acad.html"><img style="width: 40px;" src="images/proj_acad.png">Projets académiques</a>
-            </li>
-            <li><a href="projets_pro.html"><img style="width: 40px;" src="images/proj_pro.png">Projet professionnel</a>
-            </li>
-            <li><a href="projets_perso.html"><img style="width: 40px;" src="images/proj_perso.png">Projets personnels</a></li>
-            <li><a href="CV.html"><img style="width: 30px;" src="images/CV.png">Mon CV</a></li>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <a href="index.html#profil" aria-label="Retour à l'accueil">
+            <img src="images/logo_JP.png" class="navbar-logo" alt="Logo Julian Pasteur">
+        </a>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html"><img src="images/Accueil.png" class="nav-icon" alt="Accueil">Accueil</a></li>
+            <li><a href="projets_acad.html"><img src="images/proj_acad.png" class="nav-icon nav-icon--acad" alt="Projets académiques">Projets académiques</a></li>
+            <li><a href="projets_pro.html"><img src="images/proj_pro.png" class="nav-icon nav-icon--acad" alt="Projet professionnel">Projet professionnel</a></li>
+            <li><a href="projets_perso.html"><img src="images/proj_perso.png" class="nav-icon nav-icon--acad" alt="Projets personnels">Projets personnels</a></li>
+            <li><a href="CV.html"><img src="images/CV.png" class="nav-icon nav-icon--cv" alt="Mon CV">Mon CV</a></li>
         </ul>
     </nav>
 
-    <section style="height: 500px;">
-        <div style="width: 90%;">
-            <h3><a href="#site">Site e-commerce de vente de vêtements</a></h3>
-            <br>
-            <p>Développement en python avec Flask</p>
-            <br>
-            <p>Création d'une base de données avec MySQL</p>
-            <br>
-            <p>Implémentation d'un compte administrateur</p>
-            <br>
-            <p>Création d'un panier et d'un système de commentaires de chaque produit</p>
-            <br>
-            <p>Ajout de la possibilité de créer un compte pour sauvegarder ses données</p>
-            <br>
-            <p>Ajout de la possibilité de mettre un article en favori</p>
-        </div>
-        <div style="width: 90%;">
-            <h3><a href="#jeu">Jeu puissance X</a></h3>
-            <br>
-            <p>Développé en Java en programmation orientée objet (POO) et suivant le paradigme MVC</p>
-            <br>
-            <p>Puissance 4 avec taille de la grille adaptable</p>
-            <br>
-            <p>Nombre de pions à aligner adaptable</p>
-            <br>
-            <p>Implémentation de plusieurs intelligences artificielles</p>
-            <br>
-            <p>Entièrement testé avec JUnit</p>
-            <br>
-            <p>Mise en place d'un mode graphique avec JavaFX</p>
-        </div>
-    </section>
+    <main>
+        <section class="section--tall">
+            <div class="content-container">
+                <h3><a href="#site">Site e-commerce de vente de vêtements</a></h3>
+                <p>Développement en python avec Flask</p>
+                <p>Création d'une base de données avec MySQL</p>
+                <p>Implémentation d'un compte administrateur</p>
+                <p>Création d'un panier et d'un système de commentaires de chaque produit</p>
+                <p>Ajout de la possibilité de créer un compte pour sauvegarder ses données</p>
+                <p>Ajout de la possibilité de mettre un article en favori</p>
+            </div>
+            <div class="content-container">
+                <h3><a href="#jeu">Jeu puissance X</a></h3>
+                <p>Développé en Java en programmation orientée objet (POO) et suivant le paradigme MVC</p>
+                <p>Puissance 4 avec taille de la grille adaptable</p>
+                <p>Nombre de pions à aligner adaptable</p>
+                <p>Implémentation de plusieurs intelligences artificielles</p>
+                <p>Entièrement testé avec JUnit</p>
+                <p>Mise en place d'un mode graphique avec JavaFX</p>
+            </div>
+        </section>
 
-    <h2 id="jeu">Puissance X</h2>
-    <section style="height: 400px;">
-        <img src="images/icone2.png" alt="Photo de Puissance 4" style="width: 350px;">
-        <div>
-            <p style="font-size: 30px;">Ce projet était très intéressant et m'a offert une grande percepective
-                d'amélioration en algo en général, en connaissance du langage java, mais aussi en travail de groupe.
-                J'ai beaucoup aimé voir le jeu
-                s'améliorer au cours de chaque livrable. On voyait d'abord les IA s'améliorer, puis le rendu
-                graphique devenir de plus en plus beau et facile à utiliser,
-                c'était très
-                gratifiant.</p>
-        </div>
-    </section>
+        <h2 id="jeu">Puissance X</h2>
+        <section class="section--medium">
+            <img src="images/icone2.png" alt="Icône du jeu Puissance X" class="project-img">
+            <div class="content-container">
+                <p style="font-size: 30px;">Ce projet était très intéressant et m'a offert une grande perspective
+                    d'amélioration en algo en général, en connaissance du langage java, mais aussi en travail de groupe.
+                    J'ai beaucoup aimé voir le jeu
+                    s'améliorer au cours de chaque livrable. On voyait d'abord les IA s'améliorer, puis le rendu
+                    graphique devenir de plus en plus beau et facile à utiliser,
+                    c'était très
+                    gratifiant.</p>
+            </div>
+        </section>
 
-    <h3 class="lilTitle">Implémentation d'intelligences artificielles</h3>
+        <h3 class="lilTitle">Implémentation d'intelligences artificielles</h3>
 
+        <h3 class="lilTitle">Le mode graphique : </h3>
+        <section class="section--medium">
+            <div class="image-container">
+                <img src="images/screen11.png" alt="Formulaire de création de partie" class="project-img--large">
+            </div>
+            <div class="content-container">
+                <p>On voit ici le formulaire de création de partie, permettant au joueur de choisir le mode de jeu, la
+                    taille de
+                    la grille et le niveau de l'IA qu'on affronte (si on affronte une IA). Le contenu du rectangle bleu
+                    change en
+                    fonction du choix du mode de jeu. Tout ce formulaire est entièrement fait avec JavaFX en MVC. Il
+                    apparaît dès
+                    qu'une partie est lancée.</p>
+            </div>
+        </section>
 
+        <section class="section--medium">
+            <div class="image-container">
+                <img src="images/screen6.png" alt="Interface de jeu Puissance X" class="project-img--large">
+            </div>
+            <div class="content-container">
+                <p>Ce screenshot nous permet de visualiser le jeu à son état quasiment final. On voit que la partie est
+                    terminée,
+                    les 4 pièces gagnantes sont surlignées et une alerte informe le nom du gagnant. On peut aussi voir les
+                    conteneurs en haut à droite, depuis lesquels on peut drag une pièce de la bonne couleur et la drop au
+                    bon
+                    endroit. Voilà une vidéo de démonstration :</p>
+            </div>
+        </section>
 
-    <h3 class="lilTitle">Le mode graphique : </h3>
-    <section style="height: 400px;">
-        <img src="images/screen11.png" alt="Screen 5" width="200%">
-        <p>On voit ici le formulaire de création de partie, permettant au joueur de choisir le mode de jeu, la
-            taille de
-            la grille et le niveau de l'IA qu'on affronte (si on affronte une IA). Le contenu du rectangle bleu
-            change en
-            fonction du choix du mode de jeu. Tout ce formulaire est entièrement fait avec JavaFX en MVC. Il
-            apparaît dès
-            qu'une partie est lancée.</p>
-    </section>
+        <h2 id="site">Site e-commerce</h2>
+        <section class="section--medium">
+            <img src="images/icone2.png" alt="Icône du site e-commerce" class="project-img">
+            <div class="content-container">
+                <p style="font-size: 30px;">Ce projet m'a fait découvrir ce qu'était réellement le développement web. Il m'a
+                    fait découvrir le back-end que j'ai tout de suite apprécié. Nous avons réalisé un site assez complet,
+                    notamment avec le panier, la possibilité de passer commande, de mettre des articles en favoris ou encore
+                    de choisir certaines déclinaisons sur chaque article. </p>
+            </div>
+        </section>
+    </main>
 
-    <section style="height: 400px;">
-        <img src="images/screen6.png" alt="Screen 5" width="200%">
-        <p>Ce screenshot nous permet de visualiser le jeu à son état quasiment final. On voit que la partie est
-            terminée,
-            les 4 pièces gagnantes sont surlignées et une alerte informe le nom du gagnant. On peut aussi voir les
-            conteneurs en haut à droite, depuis lesquels on peut drag une pièce de la bonne couleur et la drop au
-            bon
-            endroit. Voilà une vidéo de démonstration :</p>
-    </section>
-
-    <h2 id="site">Site e-commerce</h2>
-    <section style="height: 400px;">
-        <img src="images/icone2.png" alt="Photo de Puissance 4" style="width: 350px;">
-        <div>
-            <p style="font-size: 30px;">Ce projet m'a fait découvrir ce qu'était réelement le développement web. Il m'a
-                fait découvrir le back-end que j'ai tout de suite apprécié. Nous avons réalisé un site assez complet,
-                notamment avec le panier, la possibilité de passer commande, de mettre des articles en favoris ou encore
-                de choisir certaines déclinaisons sur chaque article. </p>
-        </div>
-    </section>
-
+    <script>
+        (function() {
+            var toggle = document.querySelector('.navbar-toggle');
+            var menu = document.getElementById('nav-menu');
+            if (!toggle || !menu) return;
+            toggle.addEventListener('click', function() {
+                var isOpen = menu.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 
     <footer>
-        <p>© 2025 Julian Pasteur</p><br><br>
+        <p>© 2025 Julian Pasteur</p>
     </footer>
 </body>
 

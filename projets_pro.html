@@ -1,64 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Projets professionels</title>
+    <title>Projets professionnels - Julian Pasteur</title>
+    <meta name="description" content="Découvrez les projets professionnels de Julian Pasteur, développeur full-stack">
 </head>
 
 <body>
-    <h1 class="NomTitre">Mon premier projet<br>professionel</h1>
+    <header>
+        <h1 class="NomTitre">Mon premier projet<br>professionnel</h1>
+    </header>
 
-    <nav class="navbar">
-        <a href="index.html#profil"><img src="images/logo_JP.png" style="float: left; width: 75px;" alt="JP"></a>
-            <ul>
-            <li><a href="index.html"><img style="width: 35px;" src="images/Accueil.png">Accueil</a></li>
-            <li><a href="projets_acad.html"><img style="width: 40px;" src="images/proj_acad.png">Projets académiques</a>
-            </li>
-            <li><a href="projets_pro.html"><img style="width: 40px;" src="images/proj_pro.png">Projet professionnel</a>
-            </li>
-            <li><a href="projets_perso.html"><img style="width: 40px;" src="images/proj_perso.png">Projets personnels</a></li>
-            <li><a href="CV.html"><img style="width: 30px;" src="images/CV.png">Mon CV</a></li>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <a href="index.html#profil" aria-label="Retour à l'accueil">
+            <img src="images/logo_JP.png" class="navbar-logo" alt="Logo Julian Pasteur">
+        </a>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html"><img src="images/Accueil.png" class="nav-icon" alt="Accueil">Accueil</a></li>
+            <li><a href="projets_acad.html"><img src="images/proj_acad.png" class="nav-icon nav-icon--acad" alt="Projets académiques">Projets académiques</a></li>
+            <li><a href="projets_pro.html"><img src="images/proj_pro.png" class="nav-icon nav-icon--acad" alt="Projet professionnel">Projet professionnel</a></li>
+            <li><a href="projets_perso.html"><img src="images/proj_perso.png" class="nav-icon nav-icon--acad" alt="Projets personnels">Projets personnels</a></li>
+            <li><a href="CV.html"><img src="images/CV.png" class="nav-icon nav-icon--cv" alt="Mon CV">Mon CV</a></li>
         </ul>
     </nav>
 
-    <section style="height: 400px;">
-        <div style="width: 90%;">
-            <h3>Site informatif professionel - MATHière à penser</h3>
-            <br>
-            <p>Développement d'un site Front End (HTML / CSS / JavaScript) d'information en autonomie</p>
-            <br>
-            <p>Conception d'un script PHP utilisant sqlLite, automatisant l'envoi de devis / facture par des formulaires
-                préparés</p>
-            <br>
-            <p>Mise en place de différents scripts avec JavaScript</p>
-        </div>
-    </section>
+    <main>
+        <section class="section--medium">
+            <div class="content-container">
+                <h3>Site informatif professionnel - MATHière à penser</h3>
+                <p>Développement d'un site Front End (HTML / CSS / JavaScript) d'information en autonomie</p>
+                <p>Conception d'un script PHP utilisant SQLite, automatisant l'envoi de devis / facture par des formulaires
+                    préparés</p>
+                <p>Mise en place de différents scripts avec JavaScript</p>
+            </div>
+        </section>
 
-    <h2>Apparence du site</h2>
-    <section style="height: 500px;">
-        <img src="images/screen1_site.png" alt="Screen 3" width="250%" style="border-radius: 20px;">
+        <h2>Apparence du site</h2>
+        <section class="section--tall">
+            <div class="image-container">
+                <img src="images/screen1_site.png" alt="Page d'accueil du site MATHière à penser" class="project-img--large">
+            </div>
+            <div class="content-container">
+                <p>Cette capture d'écran illustre la page d'accueil du site principal, qui regroupe six « sous-sites », chacun
+                    dédié à un domaine spécifique des mathématiques.</p>
+            </div>
+        </section>
 
-        <p>Cette capture d'écran illustre la page d'accueil du site principal, qui regroupe six « sous-sites », chacun
-            dédié à un domaine spécifique des mathématiques.</p>
-    </section>
+        <section class="section--tall">
+            <video src="images/video_site.mp4" class="video-demo--small" controls preload="metadata">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+            <div class="content-container">
+                <p>Cette vidéo démarre sur la page d'accueil du site Klasma. Elle présente le style visuel, identique sur
+                    l'ensemble des pages du site.</p>
 
-    <section style="height: 500px;">
-        <video src="images/video_site.mp4" style="width: 200%; border-radius: 20px;" controls></video>
-        <div>
-            <p>Cette vidéo démarre sur la page d'accueil du site Klasma. Elle présente le style visuel, identique sur
-                l’ensemble des pages du site.</p><br><br>
+                <p>Elle illustre également l'intégration de vidéos, protégées contre le téléchargement grâce à un script
+                    JavaScript, conformément à la demande de l'employeur.</p>
 
-            <p>Elle illustre également l’intégration de vidéos, protégées contre le téléchargement grâce à un script
-                JavaScript, conformément à la demande de l’employeur.</p><br><br>
+                <p>Enfin, elle montre le fonctionnement de l'envoi automatisé d'e-mails, réalisé avec PHP et SQLite.</p>
+            </div>
+        </section>
+    </main>
 
-            <p>Enfin, elle montre le fonctionnement de l’envoi automatisé d’e-mails, réalisé avec PHP et SQLite.</p>
-
-        </div>
-    </section>
+    <script>
+        (function() {
+            var toggle = document.querySelector('.navbar-toggle');
+            var menu = document.getElementById('nav-menu');
+            if (!toggle || !menu) return;
+            toggle.addEventListener('click', function() {
+                var isOpen = menu.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 
     <footer>
         <p>© 2025 Julian Pasteur</p>

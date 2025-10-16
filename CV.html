@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>CV Julian Pasteur</title>
+    <title>CV Julian Pasteur - Développeur Full-Stack</title>
+    <meta name="description" content="Consultez le CV de Julian Pasteur, étudiant développeur full-stack en BUT Informatique">
 </head>
 
 <body>
-    <h1 class="NomTitre">Mon CV</h1>
+    <header>
+        <h1 class="NomTitre">Mon CV</h1>
+    </header>
 
-    <nav class="navbar">
-        <a href="index.html#profil"><img src="images/logo_JP.png" style="float: left; width: 75px;" alt="JP"></a>
-        <ul>
-            <li><a href="index.html"><img style="width: 35px;" src="images/Accueil.png">Accueil</a></li>
-            <li><a href="projets_acad.html"><img style="width: 40px;" src="images/proj_acad.png">Projets académiques</a>
-            </li>
-            <li><a href="projets_pro.html"><img style="width: 40px;" src="images/proj_pro.png">Projet professionnel</a>
-            </li>
-            <li><a href="projets_perso.html"><img style="width: 40px;" src="images/proj_perso.png">Projets personnels</a></li>
-            <li><a href="CV.html"><img style="width: 30px;" src="images/CV.png">Mon CV</a></li>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <a href="index.html#profil" aria-label="Retour à l'accueil">
+            <img src="images/logo_JP.png" class="navbar-logo" alt="Logo Julian Pasteur">
+        </a>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html"><img src="images/Accueil.png" class="nav-icon" alt="Accueil">Accueil</a></li>
+            <li><a href="projets_acad.html"><img src="images/proj_acad.png" class="nav-icon nav-icon--acad" alt="Projets académiques">Projets académiques</a></li>
+            <li><a href="projets_pro.html"><img src="images/proj_pro.png" class="nav-icon nav-icon--acad" alt="Projet professionnel">Projet professionnel</a></li>
+            <li><a href="projets_perso.html"><img src="images/proj_perso.png" class="nav-icon nav-icon--acad" alt="Projets personnels">Projets personnels</a></li>
+            <li><a href="CV.html"><img src="images/CV.png" class="nav-icon nav-icon--cv" alt="Mon CV">Mon CV</a></li>
         </ul>
     </nav>
 
-    <div class="cv-container">
-        <a href="./documents/CV_Julian_Pasteur.pdf" target="blank" class="download">Télécharger mon CV</a>
+    <main>
+        <div class="cv-container">
+            <a href="./documents/CV_Julian_Pasteur.pdf" target="_blank" rel="noopener" class="download">Télécharger mon CV</a>
 
-        <img src="./images/CV_Julian_Pasteur.png" alt="CV Julian Pasteur" class="cv-img">
+            <img src="./images/CV_Julian_Pasteur.png" alt="CV Julian Pasteur - Étudiant développeur full-stack" class="cv-img">
 
-        <a href="./documents/CV_Julian_Pasteur.pdf" target="_blank" class="download">Télécharger mon CV</a>
-    </div>
+            <a href="./documents/CV_Julian_Pasteur.pdf" target="_blank" rel="noopener" class="download">Télécharger mon CV</a>
+        </div>
+    </main>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.navbar-toggle');
+            var menu = document.getElementById('nav-menu');
+            if (!toggle || !menu) return;
+            toggle.addEventListener('click', function() {
+                var isOpen = menu.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 
 
     <footer>

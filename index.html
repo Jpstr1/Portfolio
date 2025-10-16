@@ -1,190 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+    <title>Portfolio - Julian Pasteur</title>
+    <meta name="description" content="Portfolio de Julian Pasteur, étudiant développeur full-stack en BUT Informatique">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="index.html#profil"><img src="images/logo_JP.png" style="float: left; width: 75px;" alt="JP"></a>
-        <ul>
-            <li><a href="index.html"><img style="width: 35px;" src="images/Accueil.png">Accueil</a></li>
-            <li><a href="projets_acad.html"><img style="width: 40px;" src="images/proj_acad.png">Projets académiques</a>
-            </li>
-            <li><a href="projets_pro.html"><img style="width: 40px;" src="images/proj_pro.png">Projet professionnel</a>
-            </li>
-            <li><a href="projets_perso.html"><img style="width: 40px;" src="images/proj_perso.png">Projets personnels</a></li>
-            <li><a href="CV.html"><img style="width: 30px;" src="images/CV.png">Mon CV</a></li>
-
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <a href="index.html#profil" aria-label="Retour à l'accueil">
+            <img src="images/logo_JP.png" class="navbar-logo" alt="Logo Julian Pasteur">
+        </a>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html"><img src="images/Accueil.png" class="nav-icon" alt="Accueil">Accueil</a></li>
+            <li><a href="projets_acad.html"><img src="images/proj_acad.png" class="nav-icon nav-icon--acad" alt="Projets académiques">Projets académiques</a></li>
+            <li><a href="projets_pro.html"><img src="images/proj_pro.png" class="nav-icon nav-icon--acad" alt="Projet professionnel">Projet professionnel</a></li>
+            <li><a href="projets_perso.html"><img src="images/proj_perso.png" class="nav-icon nav-icon--acad" alt="Projets personnels">Projets personnels</a></li>
+            <li><a href="CV.html"><img src="images/CV.png" class="nav-icon nav-icon--cv" alt="Mon CV">Mon CV</a></li>
         </ul>
     </nav>
 
-    <h1 class="NomTitre">Julian Pasteur
-        <br>
-        <p>Étudiant développeur full-stack</p>
-    </h1>
+    <header>
+        <h1 class="NomTitre">Julian Pasteur</h1>
+    </header>
 
-    <h2>À Propos de moi</h2>
-    <section id="profil" style="height: 400px;">
-        <img style="width: 300px; border: solid 4px rgb(0, 0, 57);" src="images/photo.jpg" alt="">
-        <p>
-
-            Bonjour ! Je m'appelle Julian Pasteur et je suis étudiant en BUT Informatique. Passionné par le
-            développement web et logiciel, je me forme actuellement aux langages comme Python, Java, SQL, C, JavaScript
-            ou encore HTML/CSS.
-
-            Mon objectif est de devenir développeur full-stack. J'aime relever des défis techniques et travailler sur
-            des projets concrets qui ont un impact réel, me permettant de sentir une vraie amélioration de mes
-            compétences.
-
-            En dehors du code, je m'intéresse aussi aux jeux vidéo, aux mathématiques ou encore au sport en général.
-
-        </p>
-    </section>
-
-    <h2>Compétences</h2>
-    <div class="skillset">
-        <div class="card">Python</div>
-        <div class="card">Java</div>
-        <div class="card">C</div>
-        <div class="card">PHP</div>
-        <div class="card">MySQL</div>
-        <div class="card">JavaScript</div>
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-    </div>
-
-    <div class="skillset">
-        <div class="card">Git</div>
-        <div class="card">Flask</div>
-        <div class="card">JavaFX</div>
-        <div class="card">Paradigme MVC</div>
-        <div class="card">Java OOP</div>
-    </div>
-
-    <h2>Outils utilisés</h2>
-    <div class="skillset">
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/vscode.png" alt="vscode">
-                </div>
-                <div class="card-back">
-                    VS Code
-                </div>
+    <main>
+        <h2>À Propos de moi</h2>
+        <section id="profil" class="section--medium">
+            <img src="images/photo.jpg" alt="Photo de Julian Pasteur" class="profile-img">
+            <div class="content-container">
+                <p>
+                    Bonjour ! Je m'appelle Julian Pasteur et je suis étudiant en BUT Informatique. Passionné par le
+                    développement web et logiciel, je me forme actuellement aux langages comme Python, Java, SQL, C, JavaScript
+                    ou encore HTML/CSS.
+                </p>
+                <p>
+                    Mon objectif est de devenir développeur full-stack. J'aime relever des défis techniques et travailler sur
+                    des projets concrets qui ont un impact réel, me permettant de sentir une vraie amélioration de mes
+                    compétences.
+                </p>
+                <p>
+                    En dehors du code, je m'intéresse aussi aux jeux vidéo, aux mathématiques ou encore au sport en général.
+                </p>
             </div>
+        </section>
+
+        <h2>Compétences</h2>
+        <div class="skillset">
+            <div class="card">Python</div>
+            <div class="card">Java</div>
+            <div class="card">C</div>
+            <div class="card">PHP</div>
+            <div class="card">MySQL</div>
+            <div class="card">JavaScript</div>
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
         </div>
 
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/pycharm.png" alt="pycharm">
-                </div>
-                <div class="card-back">
-                    PyCharm
-                </div>
-            </div>
+        <div class="skillset">
+            <div class="card">Git</div>
+            <div class="card">Flask</div>
+            <div class="card">JavaFX</div>
+            <div class="card">Paradigme MVC</div>
+            <div class="card">Java OOP</div>
         </div>
 
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/intelliJ.png" alt="intellij">
-                </div>
-                <div class="card-back">
-                    IntelliJ
+        <h2>Outils utilisés</h2>
+        <div class="skillset">
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/vscode.png" alt="VS Code">
+                    </div>
+                    <div class="card-back">
+                        VS Code
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/datagrip.png" alt="datagrip">
-                </div>
-                <div class="card-back">
-                    DataGrip
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/pycharm.png" alt="PyCharm">
+                    </div>
+                    <div class="card-back">
+                        PyCharm
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/excel.png" alt="excel">
-                </div>
-                <div class="card-back">
-                    Excel
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/intelliJ.png" alt="IntelliJ IDEA">
+                    </div>
+                    <div class="card-back">
+                        IntelliJ
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/libre_office.png" alt="libre office">
-                </div>
-                <div class="card-back">
-                    LibreOffice
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/datagrip.png" alt="DataGrip">
+                    </div>
+                    <div class="card-back">
+                        DataGrip
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="tool-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img style="width: 100px; height: 100px;" src="images/canva.png" alt="canva">
-                </div>
-                <div class="card-back">
-                    Canva
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/excel.png" alt="Microsoft Excel">
+                    </div>
+                    <div class="card-back">
+                        Excel
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>  
+
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/libre_office.png" alt="LibreOffice">
+                    </div>
+                    <div class="card-back">
+                        LibreOffice
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/canva.png" alt="Canva">
+                    </div>
+                    <div class="card-back">
+                        Canva
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/cursor.png" alt="Cursor">
+                    </div>
+                    <div class="card-back">
+                        Cursor
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/ganttproject.png" alt="ganttproject">
+                    </div>
+                    <div class="card-back">
+                        GanttProject
+                    </div>
+                </div>
+            </div>
+        </div>  
    
-    <h2>Me Contacter</h2>
-    <div style="display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 40px;
-    width: 70%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.397);
-    border-radius: 50px;
-    margin: 100px auto 0 auto;">
+        <h2>Me Contacter</h2>
+        <div class="contact-section">
+            <p class="contact-title">
+                Je suis ouvert à toute opportunité de stage ou projet collaboratif. N'hésitez pas à me contacter :
+            </p>
 
-        <p style="margin: 0 0 20px 0; font-size: 30px;">
-            Je suis ouvert à toute opportunité de stage ou projet collaboratif. N'hésitez pas à me contacter :
-        </p>
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <a href="tel:0767470262" class="contact-link">
+                        📞 Téléphone : 07 67 47 02 62
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="mailto:julianpasteurrr@gmail.com" class="contact-link">
+                        📧 Email : julianpasteurrr@gmail.com
+                    </a>
+                </li>
+                <li class="contact-item">
+                    📍 Première adresse postale : 2 le clos des Hauts Prés, 25720 Pugey
+                </li>
+                <li class="contact-item">
+                    📍 Deuxième adresse postale : 11 rue Aristide Briand, 90000 Belfort
+                </li>
+            </ul>
+        </div>
+    </main>
 
-        <ul style="list-style: none; padding: 0; margin: 0; font-size: 25px;">
-            <li>
-                <a href="tel:0767470262" style="text-decoration: none; color: white;">
-                    📞 Téléphone : 07 67 47 02 62
-                </a>
-            </li><br>
-            <li>
-                <a href="mailto:julianpasteurrr@gmail.com" style="text-decoration: none; color: white;">
-                    📧 Email : julianpasteurrr@gmail.com
-                </a>
-            </li><br>
-            <li>
-                📍 Première adresse postale : 2 le clos des Hauts Prés, 25720 Pugey
-            </li><br>
-            <li>
-                📍 Deuxième adresse postale : 11 rue Aristide Briand, 90000 Belfort
-            </li>
-
-        </ul>
-    </div>
-
+    <script>
+        (function() {
+            var toggle = document.querySelector('.navbar-toggle');
+            var menu = document.getElementById('nav-menu');
+            if (!toggle || !menu) return;
+            toggle.addEventListener('click', function() {
+                var isOpen = menu.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 
     <footer>
         <p>© 2025 Julian Pasteur</p>

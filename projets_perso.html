@@ -1,111 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Projets professionels</title>
+    <title>Projets personnels - Julian Pasteur</title>
+    <meta name="description" content="Découvrez les projets personnels de Julian Pasteur, développeur full-stack">
 </head>
 
 <body>
-    <h1 class="NomTitre">Mes projets personnels</h1>
+    <header>
+        <h1 class="NomTitre">Mes projets personnels</h1>
+    </header>
 
-    <nav class="navbar">
-        <a href="index.html#profil"><img src="images/logo_JP.png" style="float: left; width: 75px;" alt="JP"></a>
-        <ul>
-            <li><a href="index.html"><img style="width: 35px;" src="images/Accueil.png">Accueil</a></li>
-            <li><a href="projets_acad.html"><img style="width: 40px;" src="images/proj_acad.png">Projets académiques</a>
-            </li>
-            <li><a href="projets_pro.html"><img style="width: 40px;" src="images/proj_pro.png">Projet professionnel</a>
-            </li>
-            <li><a href="projets_perso.html"><img style="width: 40px;" src="images/proj_perso.png">Projets
-                    personnels</a></li>
-            <li><a href="CV.html"><img style="width: 30px;" src="images/CV.png">Mon CV</a></li>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <a href="index.html#profil" aria-label="Retour à l'accueil">
+            <img src="images/logo_JP.png" class="navbar-logo" alt="Logo Julian Pasteur">
+        </a>
+        <button class="navbar-toggle" aria-label="Ouvrir le menu" aria-controls="nav-menu" aria-expanded="false">
+            <span class="bar"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html"><img src="images/Accueil.png" class="nav-icon" alt="Accueil">Accueil</a></li>
+            <li><a href="projets_acad.html"><img src="images/proj_acad.png" class="nav-icon nav-icon--acad" alt="Projets académiques">Projets académiques</a></li>
+            <li><a href="projets_pro.html"><img src="images/proj_pro.png" class="nav-icon nav-icon--acad" alt="Projet professionnel">Projet professionnel</a></li>
+            <li><a href="projets_perso.html"><img src="images/proj_perso.png" class="nav-icon nav-icon--acad" alt="Projets personnels">Projets personnels</a></li>
+            <li><a href="CV.html"><img src="images/CV.png" class="nav-icon nav-icon--cv" alt="Mon CV">Mon CV</a></li>
         </ul>
     </nav>
 
-    <section style="height: 500px;">
-        <div style="width: 90%;">
-            <h3><a href="https://github.com/Jpstr1/Portfolio">35 seconds to survive - Télécharger le jeu</a></h3>
-            <br>
-            <p>Ce petit jeu a été un moyen pour moi de découvrir le langage et le moteur principalement. L'objetif n'était pas la qualité, mais l'apprentissage pour par la suite pouvoir me lancer dans de réels projets en groupe.</p>
-            <br>
-            <p>Développement en GDscript, avec le moteur Godot</p>
-            <br>
-            <p>Basé sur le tutoriel 2D de Godot</p>
-            <br>
-            <p>Implémentation de la possibilié de jouer à plusieurs</p>
-            <br>
-            <p>Utilisation de la gravité et de certaines forces proposées par le moteur</p>
-            <br>
-            <p>Implémentation de la possibilité du tuer l'autre joueur avec un lancé de couteau rectiligne</p>
-            <br>
-            <p>Manette et clavier-souris sont utilisables</p>
-            <br>
-            
-        </div>
-    </section>
+    <main>
+        <section class="section--tall">
+            <div class="content-container">
+                <h3><a href="https://github.com/Jpstr1/35_secondes_to_survive/releases/tag/1.0" target="_blank" rel="noopener">35 seconds to survive - Télécharger le jeu</a></h3>
+                <p>Ce petit jeu a été un moyen pour moi de découvrir le langage et le moteur principalement. L'objetif n'était pas la qualité, mais l'apprentissage pour par la suite pouvoir me lancer dans de réels projets en groupe.</p>
+                <p>Développement en GDscript, avec le moteur Godot</p>
+                <p>Basé sur le tutoriel 2D de Godot</p>
+                <p>Implémentation de la possibilité de jouer à plusieurs</p>
+                <p>Utilisation de la gravité et de certaines forces proposées par le moteur</p>
+                <p>Implémentation de la possibilité de tuer l'autre joueur avec un lancé de couteau rectiligne</p>
+                <p>Manette et clavier-souris sont utilisables</p>
+            </div>
+        </section>
 
-    <h2>Apparence du jeu</h2>
-    <section style="padding: 40px; display: flex; justify-content: center; min-height: 900px; width: 50%;">
-        <ul style="list-style-type: none; padding: 0; margin: 0;">
-            <li style="margin-bottom: 20px; text-align: center;">
-                <img src="images/screen_35interface.png" width="55%" style="border-radius: 20px;">
-            </li>
-            <li style="margin-bottom: 20px; text-align: center;">
-                <img src="images/screen_35game.png" width="55%" style="border-radius: 20px;">
-            </li>
-            <li style="margin-bottom: 20px; text-align: center;">
-                <img src="images/screen_35menu.png" width="55%" style="border-radius: 20px;">
-            </li>
-            <li style="margin-bottom: 20px; text-align: center;">
-                <img src="images/screen_35gameover.png" width="55%" style="border-radius: 20px;">
-            </li>
-            <li style="text-align: center;">
-                <img src="images/screen_35victory.png" width="55%" style="border-radius: 20px;">
-            </li>
-        </ul>
-    </section>
+        <h2>Apparence du jeu</h2>
+        <section class="section--gallery">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <img src="images/screen_35interface.png" alt="Interface du jeu 35 seconds to survive" class="gallery-img">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/screen_35game.png" alt="Capture d'écran du gameplay" class="gallery-img">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/screen_35menu.png" alt="Menu principal du jeu" class="gallery-img">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/screen_35gameover.png" alt="Écran de fin de partie" class="gallery-img">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/screen_35victory.png" alt="Écran de victoire" class="gallery-img">
+                </li>
+            </ul>
+        </section>
 
+        <h2>Vidéo démonstrative</h2>
+        <section class="section--video">
+            <video src="images/video_35seconds.mp4" class="video-demo" controls preload="metadata">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+            <div class="content-container">
+                <p>Cette vidéo montre le gameplay, qui diffère entre chaque niveau et en fonction du nombre de joueur. J'ai
+                    essayé de rajouter des mobs plus ou moins imprévisibles grâce à la gravité pour les haches, le spawn et
+                    la direction aléatoire pour les mobs de base, et un mouvement incurvé pour les autres. L'objectif était
+                    de rendre le jeu un peu plus intéressant et de découvrir les différentes fonctionnalités offertes par le
+                    moteur.</p>
+            </div>
+        </section>
 
+        <section style="margin-top: 250px;">
+            <div>
+                <h3><a href="https://github.com/Quentin0312/UltimateRoundRunners">Ultimate Rounds Runners</a> (toujours en cours de développement)</h3>
+                <p>Développé en groupe de deux, ce deuxième jeu représente pour moi un projet un plus sérieux que celui présenté ci-dessus.</p>
+                <p>Développement en GDscript, avec le moteur Godot</p>
+                <p>Jeu de Course à plusieurs, avec :
+                    <br>&nbsp;&nbsp;&nbsp;Possibilité de tuer l'autre joueur
+                    <br>&nbsp;&nbsp;&nbsp;Cartes d'amélioration à chaque fin de tour
+                    <br>&nbsp;&nbsp;&nbsp;Mobs et maps variés
+                    <br>&nbsp;&nbsp;&nbsp;Types d'armes variées
+                </p>
+                <p>Code bien plus propre et organisé pour ce projet que je veux plus conséquent </p>
+                <p>Implémentation d'une caméra movible</p>
+                <p>Manette et clavier-souris utilisables</p>
+            </div>
+        </section>
 
-    <h2>Vidéo démonstrative</h2>
-    <section style="height: 500px;">
-        <video src="images/video_35seconds.mp4" style="width: 600%; border-radius: 20px;" controls></video>
-        <div>
-            <p>Cette vidéo montre le gameplay, qui diffère entre chaque niveau et en fonction du nombre de joueur. J'ai
-                essayé de rajouter des mobs plus ou moins imprévisible grâce à la gravité pour les hâches, le spawn et
-                la direction aléatoire pour les mobs de base, et un mouvement incurvé pour les autres. L'objectif était
-                de rendre le jeu un peu plus intéressant et de découvrir les différentes fonctionnalités offertes par le
-                moteur.</p>
-        </div>
-    </section>
+        <h2>Apparence du jeu</h2>
+        <section class="section--gallery">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <img src="images/screen_URRgame.png" alt="Capture d'écran du gameplay" class="gallery-img">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/screen_URRlose.png" alt="Capture défaite" class="gallery-img">
+                </li>
+                <li class="gallery-item">
+                    <img src="images/screen_URRwin.png" alt="Capture Win" class="gallery-img">
+                </li>
+            </ul>
+        </section>
 
-    
-    <section style="height: 500px;">
-        <div style="width: 90%;">
-            <h3><a href="https://github.com/Jpstr1/Portfolio">Ultimate Rounds Runners</a> (toujours en cours de développement)</h3>
-            <br>
-            <p>Codé en groupe de deux, ce deuxième jeu représente pour moi un projet un plus sérieux que celui présenté ci-dessus.</p>
-            <br>
-            <p>Développement en GDscript, avec le moteur Godot</p>
-            <br>
-            <p>Jeu de Course à plusieurs, avec la possibilité de tuer l'autre joueur, et des cartes d'amélioration à chaque fin de tour.</p>
-            <br>
-            <p>Implémentation de différents mobs et maps</p>
-            <br>
-            <p>Code bien plus propre et rangé pour un projet potentiellement plus conséquent </p>
-            <br>
-            <p>Implémentation de la possibilité du tuer l'autre joueur avec un lancé de couteau rectiligne</p>
-            <br>
-            <p>Manette et clavier-souris sont utilisables</p>
-            <br>
-            
-        </div>
-    </section>
-3
+    </main>
+
+    <script>
+        (function() {
+            var toggle = document.querySelector('.navbar-toggle');
+            var menu = document.getElementById('nav-menu');
+            if (!toggle || !menu) return;
+            toggle.addEventListener('click', function() {
+                var isOpen = menu.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+        })();
+    </script>
 
     <footer>
         <p>© 2025 Julian Pasteur</p>
